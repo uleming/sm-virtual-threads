@@ -8,6 +8,12 @@ version = "1.0-SNAPSHOT"
 
 apply(plugin = "io.spring.dependency-management")
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(20))
+    }
+}
+
 repositories {
     mavenCentral()
 }
